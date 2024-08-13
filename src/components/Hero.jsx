@@ -1,0 +1,36 @@
+import Header from "./Header";
+
+export default function Hero() {
+  return (
+    <div className="h-screen w-full bg-sharp-gradient flex items-center px-8">
+      <Header />
+
+      <div className="flex justify-between items-center w-full max-w-4xl mx-auto">
+        
+        <div className="flex flex-col space-y-16 w-1/2">
+          <h2 className="text-4xl font-bold text-custom-green ">
+            I am a Frontend <br /> Developer...
+          </h2>
+          <p className="text-lg text-slate-200">
+            ...who likes to craft solid and scalable frontend products with great user experiences.
+          </p>
+          <div className="flex space-x-4">
+          <button className="px-4 py-2 bg-slate-200 text-custom-purple rounded flex items-center space-x-2 mb-0 h-10">
+              <img src="/github.svg" alt="Github logo" className="w-5 h-5" />
+              <span>Github</span>
+            </button>
+            <button className="px-4 py-2 bg-slate-200 text-custom-purple rounded flex items-center space-x-2 mb-0 h-10">
+              <img src="/LinkedIn.svg" alt="LinkedIn logo" className="w-5 h-5" />
+              <span>LinkedIn</span>
+            </button>
+          </div>
+        </div>
+
+       
+        <div className="w-1/2 flex justify-center">
+          <img src="/hero-right.png" alt="Hero" className="w-[350px] h-[375px]"  />
+        </div>
+      </div>
+    </div>
+  );
+}

@@ -1,8 +1,13 @@
+
+import { useTheme } from "../contexts/themeContext";
 import Header from "./Header";
 
 export default function Hero() {
+
+  const {theme, toggleTheme} = useTheme();
+
   return (
-    <div className="h-screen w-full bg-sharp-gradient flex items-center px-8">
+    <div className="h-screen w-full bg-sharp-gradient flex items-center px-8 dark:bg-sharp-gradient-dark">
       <Header />
 
       <div className="flex justify-between items-center w-full max-w-4xl mx-auto">
@@ -15,12 +20,12 @@ export default function Hero() {
             ...who likes to craft solid and scalable frontend products with great user experiences.
           </p>
           <div className="flex space-x-4">
-          <button className="px-4 py-2 bg-slate-200 text-custom-purple rounded flex items-center space-x-2 mb-0 h-10">
-              <img src="/github.svg" alt="Github logo" className="w-5 h-5" />
+          <button className="px-4 py-2 bg-slate-200 text-custom-purple rounded flex items-center space-x-2 mb-0 h-10 dark:bg-custom-dark-grey dark:text-slate-100">
+          <img src={theme === 'dark' ? '/github_dark_mode.svg' : '/github.svg'} alt="Github logo" className="w-5 h-5" />
               <span>Github</span>
             </button>
-            <button className="px-4 py-2 bg-slate-200 text-custom-purple rounded flex items-center space-x-2 mb-0 h-10">
-              <img src="/LinkedIn.svg" alt="LinkedIn logo" className="w-5 h-5" />
+            <button className="px-4 py-2 bg-slate-200 text-custom-purple rounded flex items-center space-x-2 mb-0 h-10 dark:bg-custom-dark-grey dark:text-slate-100">
+            <img src={theme === 'dark' ? '/LinkedIn_dark_mode.svg' : '/LinkedIn.svg'} alt="LinkedIn logo" className="w-5 h-5" />
               <span>LinkedIn</span>
             </button>
           </div>

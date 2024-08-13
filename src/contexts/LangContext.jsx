@@ -8,7 +8,7 @@ const LangContextProvider = ({children})=> {
   const [lang, setLang] = useLocaleStorage("lang", "en");
 
   const switchLanguage = () => {
-    const newLanguage = theme === "en" ? "tr" : "en";
+    const newLanguage = lang === "en" ? "tr" : "en";
     setLang(newLanguage);
   }
   

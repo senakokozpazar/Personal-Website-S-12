@@ -5,7 +5,7 @@ export const texts = {
     },
     hero:{
       title:"Ben bir Frontend Geliştiricisiyim...",
-      text:"..güçlü ve ölçeklenebilir frontend ürünler oluşturmayı ve harika kullanıcı deneyimleri sunmayı seven biri.",
+      text:"...güçlü ve ölçeklenebilir frontend ürünler oluşturmayı ve harika kullanıcı deneyimleri sunmayı seven biri.",
       btnOne:"Github",
       btnTwo:"LinkedIn"
     },

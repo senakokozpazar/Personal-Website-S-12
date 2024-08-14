@@ -24,19 +24,19 @@ export default function Hero() {
         
         <div className="flex flex-col space-y-16 w-1/2">
           <h2 className="text-4xl font-bold text-custom-green ">
-          {/*data[lang].hero.title*/}
+          {data[lang].hero.title}
           </h2>
           <p className="text-lg text-slate-200">
-          {/*data[lang].hero.text*/}
+          {data[lang].hero.text}
           </p>
           <div className="flex space-x-4">
           <button className="px-4 py-2 bg-slate-200 text-custom-purple rounded flex items-center space-x-2 mb-0 h-10 dark:bg-custom-dark-grey dark:text-slate-100">
           <img src={theme === 'dark' ? '/github_dark_mode.svg' : '/github.svg'} alt="Github logo" className="w-5 h-5" />
-              <span> {/*data[lang].hero.btnOne*/}</span>
+              <span> {data[lang].hero.btnOne}</span>
             </button>
             <button className="px-4 py-2 bg-slate-200 text-custom-purple rounded flex items-center space-x-2 mb-0 h-10 dark:bg-custom-dark-grey dark:text-slate-100">
             <img src={theme === 'dark' ? '/LinkedIn_dark_mode.svg' : '/LinkedIn.svg'} alt="LinkedIn logo" className="w-5 h-5" />
-              <span>{/*data[lang].hero.btnTwo*/}</span>
+              <span>{data[lang].hero.btnTwo}</span>
             </button>
           </div>
         </div>

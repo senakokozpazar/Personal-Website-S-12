@@ -13,7 +13,7 @@ export default function Profile() {
     return <div>Error: {error}</div>;
   }
 
-  /*const profile = data[lang].profile*/
+  const profile = data[lang].profile;
 
   
 
@@ -23,19 +23,19 @@ export default function Profile() {
       <div className="flex flex-col justify-center space-y-6 w-1/3">
         <div className="max-w-md mx-auto p-6">
           <div className="w-full flex items-start mb-4">
-            <p className="text-4xl font-bold text-custom-green">{/*profile.title*/}</p>
+            <p className="text-4xl font-bold text-custom-green">{profile.title}</p>
           </div>
 
           <div className="mb-4">
-            <h3 className="text-white text-xl">{/*profile.subTitle1*/}</h3>
+            <h3 className="text-white text-xl">{profile.subTitle1}</h3>
           </div>
 
-          {/*Object.entries(profile.userInformation).map(([key, value]) => (
+          {Object.entries(profile.userInformation).map(([key, value]) => (
             <div key={key} className="flex justify-between py-2">
               <span className="font-semibold text-custom-green mr-12">{key}</span>
               <span className="text-slate-100 ml-auto">{value}</span>
             </div>
-          ))*/}
+          ))}
         </div>
       </div>
 
@@ -45,9 +45,9 @@ export default function Profile() {
 
       <div className="flex flex-col justify-center space-y-6 w-1/3 p-6">
         <div className="mb-4">
-          <h3 className="text-white text-xl">{/*profile.subTitle2*/}</h3>
+          <h3 className="text-white text-xl">{profile.subTitle2}</h3>
           <p className="text-slate-100">
-           {/*profile.text*/}
+           {profile.text}
           </p>
         </div>
       </div>

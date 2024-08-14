@@ -1,4 +1,4 @@
-const texts = [
+export const texts = [
  {
   tr: {
     header:{

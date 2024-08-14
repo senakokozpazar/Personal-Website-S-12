@@ -13,7 +13,7 @@ export default function Profile() {
   
 
   return (
-    <div className="bg-custom-purple flex justify-center items-center w-full min-h-screen overflow-hidden">
+    <div className="bg-custom-purple dark:bg-custom-dark-purple flex justify-center items-center w-full min-h-screen overflow-hidden">
       
       <div className="flex flex-col justify-center space-y-6 w-1/3">
         <div className="max-w-md mx-auto p-6">

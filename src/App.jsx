@@ -6,12 +6,12 @@ import Footer from './components/Footer';
 import Projects from './components/Projects';
 import LangContextProvider from './contexts/LangContext';
 import ThemeContextProvider from './contexts/themeContext';
-import DataContextProvider from './contexts/DataContext';
+
 
 function App() {
   return (
     <ThemeContextProvider>
-      <DataContextProvider>
+  
     <div className="font-inter">
       <LangContextProvider>
       <Hero />
@@ -21,7 +21,7 @@ function App() {
       <Footer />
       </LangContextProvider>
     </div>
-    </DataContextProvider>
+   
     </ThemeContextProvider>
   );
 }

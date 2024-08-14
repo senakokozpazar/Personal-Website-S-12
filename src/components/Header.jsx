@@ -3,18 +3,30 @@ import { useTheme } from "../contexts/themeContext"
 
 export default function Header(){
   const {theme, toggleTheme} = useTheme();
-  const {lang, toggleLang} =useLang();
+  const {lang, switchLanguage, data, loading, error} =useLang();
+  console.log(data);
+  console.log(data[lang]);
+ 
+  if (loading) {
+    return <div>Loading...</div>;
+  }
 
+  if (error) {
+    return <div>Error: {error}</div>;
+  }
+
+ 
+ 
   return(
     
     <header className="fixed top-0 left-0 w-full px-8 py-7 font-inter text-custom-green font-bold flex justify-between items-center bg-sharp-gradient dark:bg-sharp-gradient-dark">
       <div className="relative top-5 ">
-        <p className="text-left text-2xl">almila</p>
+        <p className="text-left text-2xl">{/*data[lang].header.name*/}</p>
       </div>
 
       <div  className="flex items-center w-1/2 gap-3 ">
     
-          <button className="px-4 py-2 text-xs dark:text-custom-blue" onClick={toggleLang}>{lang==="tr" ? "SWITCH TO ENGLISH" : "TÜRKÇE'YE GEÇ"}</button>
+          <button className="px-4 py-2 text-xs dark:text-custom-blue" onClick={switchLanguage}>{lang==="tr" ? "SWITCH TO ENGLISH" : "TÜRKÇE'YE GEÇ"}</button>
       
         <label htmlFor="check" className="flex items-center space-x-2 text-xs text-custom-purple">
         <input

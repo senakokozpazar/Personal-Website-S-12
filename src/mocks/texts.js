@@ -1,8 +1,7 @@
-export const texts = [
- {
+export const texts = {
   tr: {
     header:{
-      name: "almila"
+      name: "sena"
     },
     hero:{
       title:"Ben bir Frontend Geliştiricisiyim...",
@@ -129,9 +128,7 @@ export const texts = [
         },
       ]      
     }
-  }
- },
- {
+  },
   en:{
     header:{
       name: "sena"
@@ -262,6 +259,4 @@ export const texts = [
       ]      
     }
   }
- }
-  
-]
+}

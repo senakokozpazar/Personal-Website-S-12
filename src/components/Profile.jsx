@@ -1,14 +1,19 @@
-import userInfo from '../mocks/userInfo';
-import { useEffect } from 'react';
-import useAxios, { REQ_TYPES } from '../hooks/useAxios';
+import { useLang } from "../contexts/LangContext";
+
 
 export default function Profile() {
 
-    const [getUserInfo, user, loading, error ] = useAxios([]);
+  const { lang, data, loading, error } = useLang();
 
-    useEffect(()=>{
-      getUserInfo({reqType: REQ_TYPES.POST, endpoint:'', payload: userInfo });
-    }, []);
+  if (loading) {
+    return <div>Loading...</div>;
+  }
+
+  if (error) {
+    return <div>Error: {error}</div>;
+  }
+
+  /*const profile = data[lang].profile*/
 
   
 
@@ -18,19 +23,19 @@ export default function Profile() {
       <div className="flex flex-col justify-center space-y-6 w-1/3">
         <div className="max-w-md mx-auto p-6">
           <div className="w-full flex items-start mb-4">
-            <p className="text-4xl font-bold text-custom-green">Profile</p>
+            <p className="text-4xl font-bold text-custom-green">{/*profile.title*/}</p>
           </div>
 
           <div className="mb-4">
-            <h3 className="text-white text-xl">Basic Information</h3>
+            <h3 className="text-white text-xl">{/*profile.subTitle1*/}</h3>
           </div>
 
-          {user && Object.entries(userInfo).map(([key, value]) => (
+          {/*Object.entries(profile.userInformation).map(([key, value]) => (
             <div key={key} className="flex justify-between py-2">
-              <span className="font-semibold text-custom-green">{key}</span>
-              <span className="text-slate-100">{value}</span>
+              <span className="font-semibold text-custom-green mr-12">{key}</span>
+              <span className="text-slate-100 ml-auto">{value}</span>
             </div>
-          ))}
+          ))*/}
         </div>
       </div>
 
@@ -40,9 +45,9 @@ export default function Profile() {
 
       <div className="flex flex-col justify-center space-y-6 w-1/3 p-6">
         <div className="mb-4">
-          <h3 className="text-white text-xl">About Me</h3>
+          <h3 className="text-white text-xl">{/*profile.subTitle2*/}</h3>
           <p className="text-slate-100">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quam tempora ipsum non amet, ea repudiandae animi incidunt consequatur vel ex nam in neque alias accusamus, libero laborum maxime quibusdam.
+           {/*profile.text*/}
           </p>
         </div>
       </div>

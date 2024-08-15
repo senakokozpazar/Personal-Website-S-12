@@ -20,9 +20,10 @@ const LangContextProvider = ({children})=> {
     doRequest({reqType: REQ_TYPES.POST, endpoint:'/workintech', payload: texts });
   }, [lang]);
 
+
   
   return (
-    <LangContext.Provider value={{lang, switchLanguage, data, loading, error}}>
+    <LangContext.Provider value={{lang, switchLanguage, data:data?.[lang], loading, error}}>
       {children}
     </LangContext.Provider>
   )

@@ -14,7 +14,7 @@ const Projects = () => {
     return <div>Error: {error}</div>;
   }
 
-const projects = data.projects.data;
+const projects = data?.projects?.data;
 
 
 
@@ -22,11 +22,11 @@ const projects = data.projects.data;
   return (
     <div className="bg-custom-green flex flex-col items-center w-full min-h-screen overflow-hidden p-6 dark:bg-custom-dark-green">
       <div className="w-full flex items-start mb-4">
-        <p className="text-4xl font-bold text-custom-purple dark:text-custom-green">{data.projects.title}</p>
+        <p className="text-4xl font-bold text-custom-purple dark:text-custom-green">{data?.projects?.title}</p>
       </div>
 
       <div className="w-full max-w-4xl ">
-        {projects.map(project => (
+        {(projects || []).map((project) => (
           <div
             key={project.id}
             className="bg-slate-100 shadow-lg rounded-md p-6 mb-6 flex dark:bg-custom-dark-grey"

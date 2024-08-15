@@ -4,8 +4,7 @@ import { useTheme } from "../contexts/themeContext"
 export default function Header(){
   const {theme, toggleTheme} = useTheme();
   const {lang, switchLanguage, data, loading, error} =useLang();
-  console.log(data);
-  console.log(data[lang]);
+  
  
   if (loading) {
     return <div>Loading...</div>;
@@ -21,7 +20,7 @@ export default function Header(){
     
     <header className="fixed top-0 left-0 w-full px-8 py-7 font-inter text-custom-green font-bold flex justify-between items-center bg-sharp-gradient dark:bg-sharp-gradient-dark">
       <div className="relative top-5 ">
-        <p className="text-left text-2xl">{data[lang].header.name}</p>
+        <p className="text-left text-2xl">{data.header.name}</p>
       </div>
 
       <div  className="flex items-center w-1/2 gap-3 ">

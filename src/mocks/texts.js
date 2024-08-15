@@ -67,7 +67,7 @@ export const texts = {
       data:[
         {
           id:1,
-          src:"public/Rectangle_1.png",
+          src:"/Rectangle_1.png",
           title: "Workintech",
           text:"Kullanıcılarınızın hangi çerezleri kabul edeceğini veya reddedeceğini seçmelerine olanak tanıyan basit, özelleştirilebilir ve minimal bir kurulum sunan bir çerez eklentisi. Bu eklenti, vanilla JS, SCSS ve Parcel Bundler kullanılarak oluşturulmuş olup, bir NPM paketi olarak mevcuttur ve git deposu üzerinden koda ve temalara her türlü özelleştirme yapılmasını mümkün kılar.",
           buttons:[
@@ -104,26 +104,26 @@ export const texts = {
       footer_images:[
         {
           id:1,
-          src:"public/twitter_icon.svg",
-          darkSrc: "public/twitter_dark_mode.svg",
+          src:"/twitter_icon.svg",
+          darkSrc: "/twitter_dark_mode.svg",
           alt:"twitter_icon"
         },
         {
           id:2,
-          src:"public/codepen_icon.svg",
-          darkSrc: "public/codepen_dark_mode.svg",
+          src:"/codepen_icon.svg",
+          darkSrc: "/codepen_dark_mode.svg",
           alt:"codepen_icon"
         },
         {
           id:3,
-          src:"public/at-sign_icon.svg",
-          darkSrc: "public/at-sign_dark_mode.svg",
+          src:"/at-sign_icon.svg",
+          darkSrc: "/at-sign_dark_mode.svg",
           alt:"at_icon"
         },
         {
           id:4,
-          src:"public/instagram_icon.svg",
-          darkSrc: "public/instagram_dark_mode.svg",
+          src:"/instagram_icon.svg",
+          darkSrc: "/instagram_dark_mode.svg",
           alt:"instagram_icon"
         },
       ]      
@@ -234,26 +234,26 @@ export const texts = {
       footer_images:[
         {
           id:1,
-          src:"public/twitter_icon.svg",
+          src:"/twitter_icon.svg",
           darkSrc: "public/twitter_dark_mode.svg",
           alt:"twitter_icon"
         },
         {
           id:2,
-          src:"public/codepen_icon.svg",
-          darkSrc: "public/codepen_dark_mode.svg",
+          src:"/codepen_icon.svg",
+          darkSrc: "/codepen_dark_mode.svg",
           alt:"codepen_icon"
         },
         {
           id:3,
-          src:"public/at-sign_icon.svg",
-          darkSrc: "public/at-sign_dark_mode.svg",
+          src:"/at-sign_icon.svg",
+          darkSrc: "/at-sign_dark_mode.svg",
           alt:"at_icon"
         },
         {
           id:4,
-          src:"public/instagram_icon.svg",
-          darkSrc: "public/instagram_dark_mode.svg",
+          src:"/instagram_icon.svg",
+          darkSrc: "/instagram_dark_mode.svg",
           alt:"instagram_icon"
         },
       ]      

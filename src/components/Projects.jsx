@@ -1,25 +1,32 @@
 import { useEffect } from 'react';
-import useAxios, { REQ_TYPES } from '../hooks/useAxios';
-import projects from '../mocks/projects';
+import { useLang } from '../contexts/LangContext';
+
 
 const Projects = () => {
 
-  const [getProjects, data, loading, error ] = useAxios([]);
+  const { data, loading, error } = useLang();
 
-  useEffect(()=>{
-    getProjects({reqType: REQ_TYPES.POST, endpoint:'', payload: projects });
-  }, []);
+  if (loading) {
+    return <div>Loading...</div>;
+  }
+
+  if (error) {
+    return <div>Error: {error}</div>;
+  }
+
+const projects = data.projects.data;
+
 
 
 
   return (
     <div className="bg-custom-green flex flex-col items-center w-full min-h-screen overflow-hidden p-6 dark:bg-custom-dark-green">
       <div className="w-full flex items-start mb-4">
-        <p className="text-4xl font-bold text-custom-purple dark:text-custom-green">Projects</p>
+        <p className="text-4xl font-bold text-custom-purple dark:text-custom-green">{data.projects.title}</p>
       </div>
 
       <div className="w-full max-w-4xl ">
-        {data && data.map(project => (
+        {projects.map(project => (
           <div
             key={project.id}
             className="bg-slate-100 shadow-lg rounded-md p-6 mb-6 flex dark:bg-custom-dark-grey"

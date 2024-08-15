@@ -6,18 +6,18 @@ import { texts } from "../mocks/texts";
 export const LangContext = createContext();
 
 const LangContextProvider = ({children})=> {
-
-  const [lang, setLang] = useLocalStorage("lang", "en");
+  const browserLanguage = window.navigator.language.startsWith('tr') ? 'tr' : 'en';
+  const [lang, setLang] = useLocalStorage("lang", browserLanguage);
 
   const switchLanguage = () => {
     const newLanguage = lang === "en" ? "tr" : "en";
     setLang(newLanguage);
   }
   
-  const [doRequest, data, loading, error ] = useAxios({  });
+  const [doRequest, data, loading, error ] = useAxios({});
 
   useEffect(()=>{
-    doRequest({reqType: REQ_TYPES.POST, endpoint:'', payload: texts });
+    doRequest({reqType: REQ_TYPES.POST, endpoint:'/workintech', payload: texts });
   }, [lang]);
 
   

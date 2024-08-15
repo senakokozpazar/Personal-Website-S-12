@@ -15,7 +15,7 @@ const useAxios = (initialState) => {
   
 
   const axiosInstance = axios.create({
-    baseURL: 'https://reqres.in/api/workintech',
+    baseURL: 'https://reqres.in/api',
     timeout: 5000,
   });
 

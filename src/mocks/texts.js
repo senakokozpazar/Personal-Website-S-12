@@ -67,32 +67,32 @@ export const texts = {
       data:[
         {
           id:1,
-          src:"/Rectangle_1.png",
-          title: "Workintech",
-          text:"Kullanıcılarınızın hangi çerezleri kabul edeceğini veya reddedeceğini seçmelerine olanak tanıyan basit, özelleştirilebilir ve minimal bir kurulum sunan bir çerez eklentisi. Bu eklenti, vanilla JS, SCSS ve Parcel Bundler kullanılarak oluşturulmuş olup, bir NPM paketi olarak mevcuttur ve git deposu üzerinden koda ve temalara her türlü özelleştirme yapılmasını mümkün kılar.",
+          src:"/pizza_project.jpg",
+          title: "Pizza Project",
+          text:"Bu, React kullanarak geliştirdiğim pizza sipariş uygulamam. Bu web uygulaması, pizza sipariş deneyiminizi kolaylaştırmak için tasarlandı. Kullanıcı dostu arayüzü sayesinde, müşteriler çeşitli malzemeler, boyutlar ve hamur tipleri arasından seçim yaparak pizzalarını kolayca özelleştirebilir. Ayrıca, kullanıcılar siparişlerini tamamlamadan önce sipariş özetlerini görüntüleyebilir. Proje, modern web geliştirme teknolojileri kullanılarak oluşturulmuş olup, tüm cihazlarda akıcı ve etkileyici bir deneyim sunar.",
           buttons:[
             {id: 1, label: "react"},
             {id: 2, label: "redux"},
             {id: 3, label: "vercel"}
           ],
           links: [
-            { id: 1, label: "Siteyi incele", url: "https://example.com/link1" },
-            { id: 2, label: "Github", url: "https://example.com/link2" }
+            { id: 1, label: "Siteyi incele", url: "https://mypizzaproject-sena-kokoz-pazars-projects.vercel.app/" },
+            { id: 2, label: "Github", url: "https://github.com/senakokozpazar/fsweb-s7-challenge-pizza-main/tree/main" }
           ]
         },
         {
           id:2,
-          src:"public/Rectangle_2.png",
-          title: "Günlük",
-          text:"Kullanıcılarınızın hangi çerezleri kabul edeceğini veya reddedeceğini seçmelerine olanak tanıyan basit, özelleştirilebilir ve minimal bir kurulum sunan bir çerez eklentisi. Bu eklenti, vanilla JS, SCSS ve Parcel Bundler kullanılarak oluşturulmuş olup, bir NPM paketi olarak mevcuttur ve git deposu üzerinden koda ve temalara her türlü özelleştirme yapılmasını mümkün kılar.",
+          src:"/netflix_clone.jpg",
+          title: "Netflix Clone",
+          text:"Netflix kullanıcı arayüzünün, HTML ve CSS kullanılarak oluşturulmuş, frontend geliştirme teknolojilerimi gösteren basitleştirilmiş bir sürümü: Kullanılan HTML5 CSS3.",
           buttons:[
             {id: 1, label: "react"},
             {id: 2, label: "redux"},
             {id: 3, label: "vercel"}
           ],
           links: [
-            { id: 1, label: "Siteyi incele", url: "https://example.com/link1" },
-            { id: 2, label: "Github", url: "https://example.com/link2" }
+            { id: 1, label: "Siteyi incele", url: "https://netflix-project-two-pied.vercel.app/" },
+            { id: 2, label: "Github", url: "https://github.com/senakokozpazar/netflix-project/tree/main" }
           ]
         },
       ]
@@ -197,32 +197,32 @@ export const texts = {
       data:[
         {
           id:1,
-          src:"public/Rectangle_1.png",
-          title: "Workintech",
-          text:"A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanillia JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
+          src:"/pizza_project.jpg",
+          title: "Pizza Project",
+          text:"This is my pizza ordering application developed using React. This web application is designed to simplify your pizza ordering experience. With its user-friendly interface, customers can easily customize their pizzas by selecting from a variety of toppings, sizes, and crust types. Additionally, users can view their order summary before finalizing their purchase. The project was built using modern web development technologies, ensuring a smooth and engaging experience across all devices.",
           buttons:[
             {id: 1, label: "react"},
             {id: 2, label: "redux"},
             {id: 3, label: "vercel"}
           ],
           links: [
-            { id: 1, label: "View site", url: "https://example.com/link1" },
-            { id: 2, label: "Github", url: "https://example.com/link2" }
+            { id: 1, label: "View site", url: "https://mypizzaproject-sena-kokoz-pazars-projects.vercel.app/" },
+            { id: 2, label: "Github", url: "https://github.com/senakokozpazar/fsweb-s7-challenge-pizza-main/tree/main" }
           ]
         },
         {
           id:2,
-          src:"public/Rectangle_2.png",
-          title: "Günlük",
-          text:"A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanillia JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
+          src:"/netflix_clone.jpg",
+          title: "Netflix Clone",
+          text:"A simplified version of the Netflix UI created using HTML and CSS, showcasing my front-end development skills. Technologies: Used HTML5 CSS3",
           buttons:[
             {id: 1, label: "react"},
             {id: 2, label: "redux"},
             {id: 3, label: "vercel"}
           ],
           links: [
-            { id: 1, label: "View site", url: "https://example.com/link1" },
-            { id: 2, label: "Github", url: "https://example.com/link2" }
+            { id: 1, label: "View site", url: "https://netflix-project-two-pied.vercel.app/" },
+            { id: 2, label: "Github", url: "https://github.com/senakokozpazar/netflix-project/tree/main" }
           ]
         },
       ]

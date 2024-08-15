@@ -21,8 +21,8 @@ export default {
         inter: ['Inter', 'sans-serif'],
       },
       backgroundImage: {
-        'sharp-gradient': 'linear-gradient(to right, #4731D3 60%, #CBF281 60%)',
-        'sharp-gradient-dark': 'linear-gradient(to right, #171043 60%, #252128 60%)',
+        'sharp-gradient': 'linear-gradient(to right, #4731D3 60%, #CBF281 40%)',
+        'sharp-gradient-dark': 'linear-gradient(to right, #171043 60%, #252128 40%)',
       },
     },
   },

@@ -18,10 +18,10 @@ export default function Hero() {
  
 
   return (
-    <div className="h-screen w-full bg-sharp-gradient flex items-center px-8 dark:bg-sharp-gradient-dark">
+    <div className="h-screen w-full left:0 bg-sharp-gradient flex items-center px-8 dark:bg-sharp-gradient-dark  ">
       <Header />
 
-      <div className="flex justify-between items-center w-full max-w-4xl mx-auto">
+      <div className="flex justify-between items-center w-full ">
         
         <div className="flex flex-col space-y-16 w-1/2">
           <h2 className="text-4xl font-bold text-custom-green ">
@@ -31,20 +31,24 @@ export default function Hero() {
           {data?.hero?.text}
           </p>
           <div className="flex space-x-4">
-          <button className="px-4 py-2 bg-slate-200 text-custom-purple rounded flex items-center space-x-2 mb-0 h-10 dark:bg-custom-dark-grey dark:text-slate-100">
-          <img src={theme === 'dark' ? '/github_dark_mode.svg' : '/github.svg'} alt="Github logo" className="w-5 h-5" />
+          <a href="https://github.com/senakokozpazar" target="_blank" >
+            <button className="px-4 py-2 bg-slate-200 text-custom-purple rounded flex items-center space-x-2 mb-0 h-10 dark:bg-custom-dark-grey dark:text-slate-100">
+            <img src={theme === 'dark' ? '/github_dark_mode.svg' : '/github.svg'} alt="Github logo" className="w-5 h-5" />
               <span> {data?.hero?.btnOne}</span>
             </button>
+          </a>
+          <a href="https://www.linkedin.com/in/sena-kokoz-20b383160/" target="_blank">
             <button className="px-4 py-2 bg-slate-200 text-custom-purple rounded flex items-center space-x-2 mb-0 h-10 dark:bg-custom-dark-grey dark:text-slate-100">
             <img src={theme === 'dark' ? '/LinkedIn_dark_mode.svg' : '/LinkedIn.svg'} alt="LinkedIn logo" className="w-5 h-5" />
               <span>{data?.hero?.btnTwo}</span>
             </button>
+          </a>
           </div>
         </div>
 
        
         <div className="w-1/2 flex justify-center">
-          <img src="/hero-right.png" alt="Hero" className="w-[350px] h-[375px]"  />
+          <img src="/profile.jpg" alt="Hero" className="w-[360px] h-[375px] rounded-lg mr-40"  />
         </div>
       </div>
     </div>

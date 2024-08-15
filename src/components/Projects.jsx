@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+
 import { useLang } from '../contexts/LangContext';
 
 
@@ -35,7 +35,7 @@ const projects = data?.projects?.data;
                 <img
                  src={project.src}
                  alt={project.title}
-                 className="absolute w-full h-full object-cover "
+                 className="absolute w-full h-full object-cover rounded-lg"
                  />
           </div>
             <div className="flex-1 ml-6">

@@ -44,12 +44,12 @@ export default function Profile() {
       </div>
 
       <div className="w-1/3 flex justify-center">
-        <img src="/image 2.png" alt="profile_img" className="w-[300px] h-[290px] object-cover rounded-md" />
+        <img src="/profile2.jpeg" alt="profile_img" className="w-[300px] h-[290px] object-cover rounded-md" />
       </div>
 
       <div className="flex flex-col justify-center space-y-6 w-1/3 p-6">
         <div className="mb-4">
-          <h3 className="text-white text-xl">{data?.profile?.subTitle2}</h3>
+          <h3 className="text-white text-xl mb-5">{data?.profile?.subTitle2}</h3>
           <p className="text-slate-100">
            {data?.profile?.text}
           </p>

@@ -28,7 +28,7 @@ export default function Footer(){
         <p className="text-center font-light dark:text-slate-100 w-64 break-words">
         {data?.footer?.text}
         </p>
-        <a href="mailto:almilasucode@gmail.com" className="text-center text-sm text-custom-purple underline decoration-custom-purple dark:text-custom-blue" >{data?.footer?.email}</a>
+        <a href="mailto:senakokoz@gmail.com" className="text-center text-sm text-custom-purple underline decoration-custom-purple dark:text-custom-blue" >{data?.footer?.email}</a>
       </div>
       
       <div className="flex">

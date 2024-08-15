@@ -1,5 +1,5 @@
 import { useLang } from "../contexts/LangContext";
-import { useTheme } from "../contexts/themeContext";
+import { useTheme } from "../contexts/ThemeContext";
 
 export default function Header() {
   const { theme, toggleTheme } = useTheme();

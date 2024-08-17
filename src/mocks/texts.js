@@ -235,7 +235,7 @@ export const texts = {
         {
           id:1,
           src:"/twitter_icon.svg",
-          darkSrc: "public/twitter_dark_mode.svg",
+          darkSrc: "/twitter_dark_mode.svg",
           alt:"twitter_icon"
         },
         {

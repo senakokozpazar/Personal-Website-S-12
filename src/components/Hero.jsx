@@ -43,7 +43,7 @@ export default function Hero() {
               </button>
             </a>
             <a
-              href="https://www.linkedin.com/in/sena-kokoz-20b383160/"
+              href="https://www.linkedin.com/in/sena-kokoz-pazar-20b383160/?originalSubdomain=tr"
               target="_blank"
             >
               <button className="sm:px-4 sm:py-2  bg-slate-200 text-custom-purple rounded flex items-center space-x-2 mb-0 sm:h-10 h-5 dark:bg-custom-dark-grey dark:text-slate-100">
